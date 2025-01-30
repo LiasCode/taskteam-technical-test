@@ -1,0 +1,23 @@
+# Dependencies
+/vendor/
+vendor/
+vendor
+/Godeps/
+
+# IDE files
+.vscode
+.DS_Store
+.idea
+
+# Test binary, built with `go test -c`
+/tmp
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/dist
+
+.env

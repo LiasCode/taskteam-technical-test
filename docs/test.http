@@ -1,0 +1,39 @@
+@current_id=5a143afa-9719-40e8-8ac1-60838950ee45
+@user_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiaWQiOiIxIiwiaWF0IjoxNTE2MjM5MDIyfQ.NdmXS9NOiE6j8T1wcPMR_75r5FLrGmjdSoPZN-smTsU
+
+GET http://localhost:3030/company
+
+###
+GET http://localhost:3030/company/{{current_id}}
+
+
+###
+POST http://localhost:3030/company
+Content-Type: application/json
+Authorization: {{user_token}}
+
+{
+  "name": "Empresa 2",
+  "description": "Probando api",
+  "amount_of_employees": 2400,
+  "registered": true,
+  "type": "SoleProprietorship"
+}
+
+###
+PATCH  http://localhost:3030/company/{{current_id}}
+Content-Type: application/json
+Authorization: {{user_token}}
+
+{
+  "name": "Amazon",
+  "description": "Probando api",
+  "amount_of_employees": 2400,
+  "registered": false,
+  "type": "SoleProprietorship"
+}
+
+###
+DELETE  http://localhost:3030/company/{{current_id}}
+Authorization: {{user_token}}
+
