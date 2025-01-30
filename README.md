@@ -1,7 +1,5 @@
 # Companies Microservice
 
-Tecnical test exercise.
-
 ## Requirements
 
 * Go 1.20
